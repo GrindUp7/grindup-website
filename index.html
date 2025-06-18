@@ -64,55 +64,34 @@
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 32px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 24px;
     }
     .card {
       background-color: #111;
-      padding: 20px;
-      border-radius: 16px;
-      box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+      padding: 16px;
+      border-radius: 12px;
+      box-shadow: 0 0 8px rgba(255, 255, 255, 0.05);
       transition: transform 0.3s ease;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
     }
     .card:hover {
       transform: translateY(-6px);
     }
     .card img {
       width: 100%;
-      border-radius: 12px;
-      margin-bottom: 16px;
+      border-radius: 10px;
+      margin-bottom: 12px;
     }
     .card h3 {
-      font-size: 20px;
-      margin-bottom: 8px;
+      font-size: 18px;
+      margin-bottom: 6px;
     }
     .card p {
       color: #aaa;
-      font-size: 16px;
-      margin-bottom: 16px;
-    }
-    .btn {
-      display: inline-block;
-      background-color: #fff;
-      color: #000;
-      padding: 10px 24px;
-      font-weight: 700;
-      text-decoration: none;
-      border-radius: 24px;
-      transition: background-color 0.3s ease;
-    }
-    .btn:hover {
-      background-color: #ccc;
-    }
-    .badge {
-      display: inline-block;
-      background-color: #444;
-      color: #0f0;
-      padding: 4px 10px;
-      border-radius: 12px;
-      font-size: 12px;
-      margin-bottom: 10px;
-      font-weight: bold;
+      font-size: 14px;
     }
     footer {
       padding: 40px;
@@ -141,26 +120,22 @@
   <section class="section" id="ebook">
     <h2>📘 Free Ebook</h2>
     <div class="grid">
-      <div class="card">
-        <span class="badge">FREE</span>
-        <img src="ebook-cover.jpg" alt="Free Ebook">
-        <h3>WALKING WEAPON</h3>
-        <p>A 300-page black & white styled discipline blueprint to help you become the next millionaire. Built to grind. Made to win.</p>
-        <a href="https://mega.nz/folder/1Ks01TiR#noVGm5BlMoKMU4IzfAiJGQ" class="btn" target="_blank">Download Now</a>
-      </div>
+      <a class="card" href="ebook.html">
+        <img src="ebook-cover.jpg" alt="GrindUp AI Income Ebook">
+        <h3>GrindUp_AI_Income_Ebook</h3>
+        <p>A powerful black & white PDF guide on building AI-powered online income streams without any investment or followers.</p>
+      </a>
     </div>
   </section>
 
   <section class="section" id="courses">
     <h2>🎓 Money-Making Courses</h2>
     <div class="grid">
-      <div class="card">
-        <span class="badge">FREE</span>
-        <img src="course1.jpg" alt="All Money Making Course">
-        <h3>All Money Making Course</h3>
-        <p>Unlock a bundle of premium digital marketing & side hustle courses. Perfect for beginners & grinders.</p>
-        <a href="https://mega.nz/folder/1Ks01TiR#noVGm5BlMoKMU4IzfAiJGQ" class="btn" target="_blank">Download Now</a>
-      </div>
+      <a class="card" href="courses.html">
+        <img src="course1.jpg" alt="All Money Making Courses">
+        <h3>All Money Making Courses</h3>
+        <p>Access multiple high-value courses including Dropshipping, Facebook Ads, and more. Everything you need to kickstart your online income journey.</p>
+      </a>
     </div>
   </section>
 
