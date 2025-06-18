@@ -64,34 +64,37 @@
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 24px;
     }
     .card {
       background-color: #111;
-      padding: 16px;
+      padding: 12px;
       border-radius: 12px;
       box-shadow: 0 0 8px rgba(255, 255, 255, 0.05);
       transition: transform 0.3s ease;
       cursor: pointer;
       text-decoration: none;
       color: inherit;
+      text-align: center;
     }
     .card:hover {
-      transform: translateY(-6px);
+      transform: translateY(-4px);
     }
     .card img {
       width: 100%;
+      max-width: 160px;
+      margin: 0 auto 12px auto;
       border-radius: 10px;
-      margin-bottom: 12px;
+      display: block;
     }
     .card h3 {
-      font-size: 18px;
+      font-size: 16px;
       margin-bottom: 6px;
     }
     .card p {
       color: #aaa;
-      font-size: 14px;
+      font-size: 13px;
     }
     footer {
       padding: 40px;
@@ -121,9 +124,9 @@
     <h2>📘 Free Ebook</h2>
     <div class="grid">
       <a class="card" href="ebook.html">
-        <img src="ebook-cover.jpg" alt="GrindUp AI Income Ebook">
+        <img src="ebook-cover.jpg" alt="Free Ebook">
         <h3>GrindUp_AI_Income_Ebook</h3>
-        <p>A powerful black & white PDF guide on building AI-powered online income streams without any investment or followers.</p>
+        <p>A black & white styled discipline blueprint to help you become the next millionaire.</p>
       </a>
     </div>
   </section>
@@ -134,7 +137,7 @@
       <a class="card" href="courses.html">
         <img src="course1.jpg" alt="All Money Making Courses">
         <h3>All Money Making Courses</h3>
-        <p>Access multiple high-value courses including Dropshipping, Facebook Ads, and more. Everything you need to kickstart your online income journey.</p>
+        <p>Access multiple high-value courses to kickstart your online income journey.</p>
       </a>
     </div>
   </section>
