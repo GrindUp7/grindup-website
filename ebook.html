@@ -7,84 +7,143 @@
   <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
+      margin: 0;
+      padding: 0;
       background-color: #000;
       color: #fff;
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      padding: 40px 20px;
-      line-height: 1.6;
+      font-family: 'Helvetica Neue', sans-serif;
     }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
+    header {
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #000;
+      border-bottom: 1px solid #333;
     }
-    h1 {
-      font-size: 36px;
-      margin-bottom: 20px;
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 0.1em;
     }
-    .ebook-cover {
-      width: 100%;
-      max-width: 300px;
+    main {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    .product {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+    .product img {
+      width: 280px;
       border-radius: 12px;
-      margin-bottom: 24px;
     }
-    p.description {
-      color: #ccc;
+    .product-info {
+      flex: 1;
+    }
+    .product-info h1 {
+      font-size: 32px;
+      margin-bottom: 16px;
+    }
+    .product-info p {
       font-size: 16px;
+      color: #ccc;
       margin-bottom: 24px;
     }
-    .btn {
+    .download-btn {
+      display: inline-block;
       background-color: #fff;
       color: #000;
       padding: 12px 28px;
+      font-weight: 700;
       border-radius: 30px;
       text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s;
-      display: inline-block;
+      transition: background 0.3s ease;
     }
-    .btn:hover {
-      background-color: #ddd;
+    .download-btn:hover {
+      background-color: #ccc;
     }
     .rating {
-      margin-top: 24px;
+      margin: 20px 0;
     }
     .stars {
-      color: gold;
       font-size: 20px;
+      color: gold;
     }
     .reviews {
-      margin-top: 30px;
+      background: #111;
+      padding: 24px;
+      border-radius: 12px;
+      margin-top: 40px;
     }
     .review {
-      background-color: #111;
-      padding: 16px;
-      border-radius: 10px;
-      margin-bottom: 16px;
+      border-bottom: 1px solid #333;
+      padding: 12px 0;
+    }
+    .review:last-child {
+      border-bottom: none;
+    }
+    .review strong {
+      display: block;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .review p {
+      font-size: 14px;
       color: #aaa;
+    }
+    footer {
+      padding: 40px;
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+      border-top: 1px solid #333;
+      margin-top: 60px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>WALKING WEAPON: GrindUp AI Income Ebook</h1>
-    <img src="ebook-cover.jpg" alt="Ebook Cover" class="ebook-cover">
-    <p class="description">
-      A 300-page premium black-and-white ebook challenge designed to build discipline, consistency, and wealth. Crafted for hustlers who want to automate income with AI.
-    </p>
-    <a href="https://mega.nz/folder/1Ks01TiR#noVGm5BlMoKMU4IzfAiJGQ" target="_blank" class="btn">📥 Download Now</a>
+  <header>
+    <div class="logo">GRINDUP</div>
+    <nav>
+      <a href="index.html" style="color:#fff; text-decoration:none;">Home</a>
+    </nav>
+  </header>
 
-    <div class="rating">
-      <p><strong>Rating:</strong></p>
-      <div class="stars">★★★★★ (4.9/5)</div>
+  <main>
+    <div class="product">
+      <img src="ebook-cover.jpg" alt="Ebook Cover">
+      <div class="product-info">
+        <h1>GrindUp AI Income Ebook</h1>
+        <p>This premium black-and-white styled ebook reveals step-by-step how to automate profitable income using AI tools – no face, no money, no followers needed. Built for hustlers like you.</p>
+        <div class="rating">
+          <span class="stars">★★★★★</span>
+        </div>
+        <a href="https://mega.nz/folder/1Ks01TiR#noVGm5BlMoKMU4IzfAiJGQ" class="download-btn" target="_blank">Download Free</a>
+      </div>
     </div>
 
     <div class="reviews">
-      <h2>User Reviews</h2>
-      <div class="review">“Insanely valuable. The best AI ebook I've read!” – <strong>@hustleking</strong></div>
-      <div class="review">“Helped me launch my first side hustle in 7 days.” – <strong>@dreamgrind</strong></div>
-      <div class="review">“Feels like a roadmap to winning. Respect GrindUp.” – <strong>@millionairemind</strong></div>
+      <h2 style="margin-bottom: 16px;">User Reviews</h2>
+      <div class="review">
+        <strong>🔥 @hustlemaniac</strong>
+        <p>This ebook changed the game. Super clean, straight to the point, and actionable. Respect.</p>
+      </div>
+      <div class="review">
+        <strong>💼 @buildwealthdaily</strong>
+        <p>Loved the layout. Feels premium and real. Would recommend to any beginner in the AI hustle space.</p>
+      </div>
+      <div class="review">
+        <strong>📈 @grindmode247</strong>
+        <p>Already implemented 2 ideas from the ebook and made my first sale. Let’s gooo 🔥</p>
+      </div>
     </div>
-  </div>
+  </main>
+
+  <footer>
+    &copy; 2025 GrindUp. Built for Hustlers.
+  </footer>
 </body>
 </html>
-
